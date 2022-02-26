@@ -1,2 +1,2 @@
-# coursera-test
-Test Coursera repo
+# assignments
+Assignments repo
