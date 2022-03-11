@@ -15,8 +15,8 @@ function ToBuyController(ShoppingListCheckOffService) {
   list.itemName = "";
   list.itemQuantity = "";
 
-  list.buyItem = function () {
-      ShoppingListCheckOffService.buyItem(list.itemName, list.itemQuantity);
+  list.buyItem = function (itemIndex) {
+      ShoppingListCheckOffService.buyItem(list.itemName, list.itemQuantity, itemIndex);
   };
 }
 
