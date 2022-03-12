@@ -55,7 +55,6 @@ function NarrowItDownController(MenuSearchService) {
 
       promise.then(function (foundItems) {
         list.found = foundItems;
-        console.log("list.found.length="+list.found.length);
       })
       .catch(function (error) {
         console.log("Something went terribly wrong.");
