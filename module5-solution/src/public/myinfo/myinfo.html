@@ -1,0 +1,28 @@
+<div ng-if="!myInfoCtrl.userInfo" class="text-center">Not Signed Up Yet. Sign up Now!</div>
+
+<div ng-show="myInfoCtrl.userInfo" class="container">
+  <h2 class="text-center">
+  My info
+  </h2>
+
+  <div class="row">
+    <label>Firstname: </label>&nbsp{{ myInfoCtrl.userInfo.firstname }}
+  </div>
+
+  <div class="row">
+    <label>Lastname: </label>&nbsp{{ myInfoCtrl.userInfo.lastname }}
+  </div>
+
+  <div class="row">
+    <label>Email: </label>&nbsp{{ myInfoCtrl.userInfo.email }}
+  </div>
+
+  <div class="row">
+    <label>Phone: </label>&nbsp{{ myInfoCtrl.userInfo.phone }}
+  </div>
+
+  <div class="row">
+    <label>Favourite dish: </label>
+    <img class="img-responsive" width="250" height="150" ng-src="{{myInfoCtrl.basePath}}/images/{{myInfoCtrl.userInfo.favouriteDish}}.jpg" alt="{{myInfoCtrl.userInfo.favouriteDish}}">
+  </div>
+</div>
