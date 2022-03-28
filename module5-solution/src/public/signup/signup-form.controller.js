@@ -16,7 +16,7 @@ function SignUpFormController(MenuService, UserService) {
     MenuService.getMenuItem($ctrl.user.favouriteDish).then(
       function(responseData){
         if(responseData.id){
-          UserService.saveUserInfo($ctrl.user.firstname, $ctrl.user.lastname, $ctrl.user.email, $ctrl.user.phone, $ctrl.user.favouriteDish);
+          UserService.saveUserInfo($ctrl.user.firstname, $ctrl.user.lastname, $ctrl.user.email, $ctrl.user.phone, responseData);
 
           $ctrl.favouriteDish = true;
           $ctrl.completed = true;

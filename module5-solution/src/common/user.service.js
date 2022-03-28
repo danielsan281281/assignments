@@ -17,7 +17,11 @@ function UserService($q, ApiPath) {
       "lastname" : lastname,
       "email" : email,
       "phone" : phone,
-      "favouriteDish" : favouriteDish
+      "favouriteDish" : {
+        "shortName": favouriteDish.short_name,
+        "name": favouriteDish.name,
+        "description": favouriteDish.description
+      }
     }
   };
 
